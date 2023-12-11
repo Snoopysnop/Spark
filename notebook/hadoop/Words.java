@@ -35,7 +35,7 @@ public class Words {
 	  line.next();
 
 	  /* extract all the words in the title */
-	  String[] texts = line.next().split("\s+");
+	  String[] texts = line.next().split("\\s+");
 	  for(String text : texts){
 	    Word.set(text);
 	    context.write(Word, one);
